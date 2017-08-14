@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>shopping1</title>
+    <style>
+        body {
+            color: #777;
+            font-size: 20px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        h4 {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #777;
+        }
+
+        .page {
+            background-color: #edc;
+            width: 800px;
+            margin: 20px auto;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .nav-head {
+            width: 220px;
+            border: 1px solid #ccc;
+        }
+
+        .nav-head li {
+            float: left;
+        }
+
+        .nav-head a {
+            display: inline-block;
+            padding: 7px 0;
+        }
+
+        .nav-head .tab a {
+            padding: 7px;
+        }
+
+        .goods-list {
+            display: none;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        .goods-list img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .goods-list li {
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            margin:30px;
+            float: left;
+            position: relative;
+        }
+
+        .goods-list .cover {
+            display: none;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.8;
+            transition: all 1s;
+        }
+
+        .goods-list li:hover .cover {
+            display: block;
+        }
+
+        .goods-list .cover a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 5px;
+            border: 1px solid #c81623;
+            border-radius: 3px;
+            background-color: black;
+            color: #fff;
+        }
+
+        .active {
+            background-color: #eee;
+            color: rgb(240, 0, 36);
+        }
+
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <ul class="nav-head clearfix">
+            <li class="tab">
+                <a href="#" class="active">热门宠物</a>
+            </li>
+            <li>
+                <a href="#">|</a>
+            </li>
+            <li class="tab">
+                <a href="#">猫类</a>
+            </li>
+            <li>
+                <a href="#">|</a>
+            </li>
+            <li class="tab">
+                <a href="#">犬类</a>
+            </li>
+        </ul>
+        <ul class="goods-list clearfix show">
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/cat-Fold.jpg" alt="">
+                    <h4>苏格兰折耳猫</h4>
+                    <p>￥3500</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/cat-Garfield.jpg" alt="">
+                    <h4>加菲猫</h4>
+                    <p>￥4150</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/cat-Shorthair.jpg" alt="">
+                    <h4>英短猫</h4>
+                    <p>￥2500</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/dog-ChowChow.jpg" alt="">
+                    <h4>松狮犬</h4>
+                    <p>￥1000</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/dog-Husky.jpg" alt="">
+                    <h4>哈士奇</h4>
+                    <p>￥1200</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/dog-Samoyed.jpg" alt="">
+                    <h4>萨摩耶</h4>
+                    <p>￥2000</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="goods-list clearfix">
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/cat-Fold.jpg" alt="">
+                    <h4>苏格兰折耳猫</h4>
+                    <p>￥3500</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/cat-Garfield.jpg" alt="">
+                    <h4>加菲猫</h4>
+                    <p>￥4150</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/cat-Shorthair.jpg" alt="">
+                    <h4>英短猫</h4>
+                    <p>￥2500</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="goods-list clearfix">
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/dog-ChowChow.jpg" alt="">
+                    <h4>松狮犬</h4>
+                    <p>￥1000</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/dog-Husky.jpg" alt="">
+                    <h4>哈士奇</h4>
+                    <p>￥1200</p>
+                </a>
+            </li>
+            <li>
+                <div class="cover">
+                    <a href="#">购买</a>
+                </div>
+                <a href="#">                    
+                    <img src="./imgs/dog-Samoyed.jpg" alt="">
+                    <h4>萨摩耶</h4>
+                    <p>￥2000</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.js"></script>
+    <script>
+        $(".nav-head a").on("click", function () {
+            var $this = $(this);
+            $this.addClass("active").parent().siblings().children().removeClass("active");
+            var index = $this.parent().index(".tab");
+            $(".goods-list").eq(index).addClass("show").siblings().removeClass("show");
+        })
+    </script>
+</body>
+
+</html>
